@@ -12,6 +12,10 @@ body {
   margin-right: 3px;
 }
 
+.center {
+  text-align: center;
+}
+
 .jumbotron {
   background-image:url("../media/gray.jpg");
   background-position:top left;
@@ -28,4 +32,4 @@ body {
   position:absolute;
   top:0;
   left:0;
-)
+}
