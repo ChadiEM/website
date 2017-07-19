@@ -1,3 +1,3 @@
 # Website
 
-[![Build Status](https://chadimasri.com:35719/buildStatus/icon?job=website-build-deploy)](https://chadimasri.com:35719/job/website-build-deploy/)
+[![Build Status](https://chadimasri.com/jenkins/buildStatus/icon?job=website-build-deploy)](https://chadimasri.com/jenkins/job/website-build-deploy/)
