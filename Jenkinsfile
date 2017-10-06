@@ -4,12 +4,12 @@ pipeline {
         stage('Validate') {
             steps {
                 checkout scm
-                sh 'bootlint -d W005 index.html'
+                sh 'bootlint -d W005 website/index.html'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'rsync -rv ./ /var/www/chadi/ --exclude=Jenkinsfile --exclude=.git --exclude=README.md --delete'
+                sh 'rsync -rv website/ /var/www/chadi/ --delete'
                 sh 'mkdir /var/www/chadi/docs'
                 sh 'ln -s /var/www/others/generated/CV.pdf /var/www/chadi/docs/CV.pdf'
             }
