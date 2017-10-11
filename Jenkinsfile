@@ -19,8 +19,6 @@ pipeline {
             }
             steps {
                 sh 'rsync -rv website/ /var/www/chadi/ --delete'
-                sh 'mkdir /var/www/chadi/docs'
-                sh 'ln -s /var/www/others/generated/CV.pdf /var/www/chadi/docs/CV.pdf'
             }
         }
     }
