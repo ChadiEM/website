@@ -18,7 +18,7 @@ pipeline {
                 branch 'master'
             }
             steps {
-                sh 'rsync -rv website/ /var/www/chadi/ --delete'
+                sh "rsync -rv website/ ${env.WEBSITE_HOME} --delete"
             }
         }
     }
