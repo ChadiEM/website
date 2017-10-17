@@ -1,7 +1,7 @@
 pipeline {
     agent none
     triggers {
-        bitbucketPush()
+        githubPush()
     }
     stages {
         stage('Validate') {
