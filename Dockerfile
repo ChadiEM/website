@@ -6,3 +6,4 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install -y nodejs default-jre
 
 RUN npm install -g vnu-jar bootlint stylelint stylelint-config-recommended
+RUN npm install -g @sonarwhal/sonar --unsafe-perm=true

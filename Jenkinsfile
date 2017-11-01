@@ -4,7 +4,7 @@ pipeline {
         githubPush()
     }
     stages {
-        stage('Validate') {
+        stage('Static Validation') {
             agent { dockerfile true }
             steps {
                 checkout scm
@@ -20,6 +20,16 @@ pipeline {
             }
             steps {
                 sh "rsync -rv website/ ${env.WEBSITE_HOME} --delete"
+            }
+        }
+        stage('Post-deployment Validation') {
+            agent { dockerfile true }
+            when {
+                branch 'master'
+            }
+            steps {
+                sh 'sonar https://chadimasri.com > sonar'
+                archiveArtifacts 'sonar'
             }
         }
     }
