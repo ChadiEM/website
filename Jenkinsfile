@@ -9,7 +9,7 @@ pipeline {
             steps {
                 checkout scm
                 sh 'java -jar /usr/lib/node_modules/vnu-jar/build/dist/vnu.jar --skip-non-html website/'
-                sh 'bootlint -d W005 website/index.html'
+                sh 'bootlint -d W002,W005 website/index.html'
             }
         }
         stage('Deploy') {
