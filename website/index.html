@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>Chadi El Masri</title>
+
 		<link rel="shortcut icon" type="image/png" href="favicon.png" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 		<script src="js/analytics.js"></script>
 	</head>
 
@@ -19,6 +22,7 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
+						<li><a href="/docs/CV.pdf">CV</a></li>
 						<li><a href="/blog">Blog</a></li>
 					</ul>
 				</div>
@@ -43,34 +47,52 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<h3>About Me</h3>
-					<p>I am a passionate Software Developer, interested in automation and clean code. I enjoy creating things that ease life, from simple apps to complicated gadgets.</p>
-					<p>I speak and write English, French, and Arabic.</p>
-					<p>Aside from work, I am also a regular Table Tennis player and Toastmasters member.</p>
+				<div class="col-md-8 col-md-offset-2">
+					<p>I am a Developer, Table Tennis player, and Toastmasters member. I enjoy creating things that ease life, from simple apps to complicated gadgets.</p>
+                    <p>I'm currently working as a <b>Senior Software Engineer</b> at <a href="http://www.murex.com">Murex</a>.</p>
+				</div>
+            </div>
+
+
+
+            <div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<h3>Notable Projects & Contributions</h3>
+					<dl>
+                        <dt><a href="https://github.com/ChadiEM/Lebanese-Channels">Lebanese Channels</a></dt>
+                        <dd>A web service in <b>Python</b> that aggregates multiple channels into one m3u8 playlist, and fetches the EPG data from each channel's respective website. Can be used on a media player that supports m3u8 streaming such as Kodi or VLC.</dd>
+
+                        <dt><a href="https://gist.github.com/ChadiEM/688c9a1a135fcebbbb3332e9cd8e8c82">Dashing/Smashing Airparif Widget</a></dt>
+                        <dd>Map and Pollution Index in Paris & Île-de-France. Back-end in <b>Ruby</b>, and includes image processing via ImageMagick. Front-end in <b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.</dd>
+
+                        <dt><a href="https://gist.github.com/ChadiEM/688c9a1a135fcebbbb3332e9cd8e8c82">Dashing/Smashing RATP Widget</a></dt>
+                        <dd>Polls for the given public transport lines of Paris. Back-end in <b>Ruby</b>, front-end in <b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.</dd>
+
+                        <dt>OSS Contributions<dt>
+                        <dd>
+                            Jenkins <a href="https://github.com/jan-molak/jenkins-build-monitor-plugin">Build Monitor Plugin</a>,
+                            Kodi <a href="https://github.com/kodi-pvr/pvr.iptvsimple">PVR IPTV Simple Client Addon</a>,
+                            <a href="https://github.com/kiegroup/jbpm">jBPM</a>
+                        </dd>
+                    </dl>
 				</div>
 			</div>
 
 			<hr />
 
-			<div class="row">
-				<div class="col-md-6">
-					<h3>Career</h3>
-					<p>Currently working as a full-time Java developer at <a href="http://www.murex.com">Murex</a> in Paris, France.</p>
-					<p>In my spare time, I also do some occasional Python and Web development.</p>
-					<p>You may find my CV <a href="/docs/CV.pdf">here</a>.</p>
-				</div>
-				<div class="col-md-6">
-					<h3>Studies</h3>
-					<p>In June 2012, I earned a degree in Electrical and Computer Engineering from the <a href="http://www.aub.edu.lb/">American University of Beirut</a>, with an emphasis on Software Engineering and Computer Networks.</p>
-				</div>
-			</div>
-			<hr>
 			<footer class="center">
-				<a class="social" href="http://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer"><img src="media/facebook-24x24.png" alt="Facebook" width="24" height="24" /></a>
-				<a class="social" href="http://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer"><img src="media/twitter-24x24.png" alt="Twitter"/></a>
-				<a class="social" href="http://www.linkedin.com/in/chadimasri/" target="_blank" rel="noopener noreferrer"><img src="media/linkedin-24x24.png" alt="LinkedIn" /></a>
-				<a class="social" href="http://github.com/ChadiEM" target="_blank" rel="noopener noreferrer"><img src="media/GitHub-Mark-32px.png" alt="GitHub" width="24" height="24" /></a>
+				<a class="social" href="http://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/icon/facebook.png" alt="Facebook" />
+                </a>
+				<a class="social" href="http://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/icon/twitter.png" alt="Twitter"/>
+                </a>
+				<a class="social" href="http://www.linkedin.com/in/chadimasri/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/icon/linkedin.png" alt="LinkedIn" />
+                </a>
+				<a class="social" href="http://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/icon/github.png" alt="GitHub" />
+                </a>
 			</footer>
 		</div>
 	</body>

@@ -3,13 +3,14 @@ body {
     padding-bottom: 20px;
 }
 
-#red {
-    background-color: lightblue;
-}
-
 .social {
     margin-left: 3px;
     margin-right: 3px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .center {
@@ -32,4 +33,8 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+dd {
+    margin-bottom: 15px;
 }
