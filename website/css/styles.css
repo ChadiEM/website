@@ -35,6 +35,11 @@ body {
     left: 0;
 }
 
-dd {
-    margin-bottom: 15px;
+.dl-horizontal dd {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
 }
