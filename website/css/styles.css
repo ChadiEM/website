@@ -1,45 +1,41 @@
+html {
+    /* for the sticky footer */
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /* for the sticky footer */
+    margin-bottom: 40px;
 }
 
-.social {
-    margin-left: 3px;
-    margin-right: 3px;
-}
-
-.social-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.center {
-    text-align: center;
-}
-
-.jumbotron {
+.dotted-gray {
     background-image: url("../media/gray.jpg");
-    background-position: top left;
     background-repeat: repeat;
-    background-attachment: fixed;
-}
-
-#headercontainer {
-    position:relative;
-    height: 100px;
-}
-
-#headercontainer h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .dl-horizontal dd {
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 .dl-horizontal dt {
     white-space: normal;
+}
+
+.social-icon {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 8px;
+
+    width: 24px;
+    height: 24px;
+}
+
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    /* should be the same as the body margin above */
+    height: 40px;
 }
