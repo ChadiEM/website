@@ -27,20 +27,9 @@ pipeline {
             agent { label 'master' }
             steps {
                 withAWS(credentials: 's3', region: 'eu-west-1') {
-                    s3Delete bucket: 'chadimasri-website', path: '*'
-                    s3Upload bucket: 'chadimasri-website', includePathPattern: '**', metadatas: [''], sseAlgorithm: '', workingDir: 'website'
-                    // s3Upload bucket: 'chadimasri-website', file: 'index.html', metadatas: [''], sseAlgorithm: '', workingDir: 'website'
+                    s3Delete bucket: 'chadimasri-website'
+                    s3Upload bucket: 'chadimasri-website', includePathPattern: '**', workingDir: 'website'
                 }
-
-
-
-
-                // s3Upload entries: [[bucket: 'chadimasri-website', sourceFile: 'website/**', gzipFiles: true, selectedRegion: 'eu-west-1']],
-                //     profileName: 'website-bucket',
-                //     pluginFailureResultConstraint: 'FAILURE',
-                //     userMetadata: [],
-                //     consoleLogLevel: 'INFO',
-                //     dontWaitForConcurrentBuildCompletion: false
             }
         }
     }
