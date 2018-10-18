@@ -26,12 +26,20 @@ pipeline {
         stage('Deploy to S3') {
             agent any
             steps {
-                s3Upload entries: [[bucket: 'chadimasri-website', sourceFile: 'website/**', gzipFiles: true, selectedRegion: 'eu-west-1']],
-                    profileName: 'website-bucket',
-                    pluginFailureResultConstraint: 'FAILURE',
-                    userMetadata: [],
-                    consoleLogLevel: 'INFO',
-                    dontWaitForConcurrentBuildCompletion: false
+                withAWS(credentials: 's3', region: 'eu-west-1') {
+                    s3Delete bucket: 'chadimasri-website', path: '*'
+                    s3Upload acl: 'Private', bucket: 'chadimasri-website', cacheControl: '', excludePathPattern: '', file: '', includePathPattern: 'website/**', metadatas: [''], sseAlgorithm: '', workingDir: ''
+                }
+
+
+
+
+                // s3Upload entries: [[bucket: 'chadimasri-website', sourceFile: 'website/**', gzipFiles: true, selectedRegion: 'eu-west-1']],
+                //     profileName: 'website-bucket',
+                //     pluginFailureResultConstraint: 'FAILURE',
+                //     userMetadata: [],
+                //     consoleLogLevel: 'INFO',
+                //     dontWaitForConcurrentBuildCompletion: false
             }
         }
     }
