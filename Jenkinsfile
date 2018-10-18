@@ -7,14 +7,15 @@ pipeline {
         stage('Validate') {
             agent { dockerfile true }
             steps {
-                checkout scm
-                sh 'java -jar /usr/lib/node_modules/vnu-jar/build/dist/vnu.jar website/*.html'
+                sh 'java -jar /usr/local/lib/node_modules/vnu-jar/build/dist/vnu.jar website/*.html'
                 sh 'bootlint -d W002,W005 website/*.html'
                 sh 'stylelint website/css/*'
             }
         }
         stage('Deploy') {
-            agent any
+            agent {
+                label 'website'
+            }
             when {
                 branch 'master'
             }
