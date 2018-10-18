@@ -23,5 +23,16 @@ pipeline {
                 sh "rsync -rv website/ ${env.WEBSITE_HOME} --delete"
             }
         }
+        stage('Deploy to S3') {
+            agent any
+            steps {
+                s3Upload entries: [[bucket: 'chadimasri-website', sourceFile: 'website/**', gzipFiles: true, selectedRegion: 'eu-west-1']],
+                    profileName: 'website-bucket',
+                    pluginFailureResultConstraint: 'FAILURE',
+                    userMetadata: [],
+                    consoleLogLevel: 'INFO',
+                    dontWaitForConcurrentBuildCompletion: false
+            }
+        }
     }
 }
