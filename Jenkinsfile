@@ -27,7 +27,7 @@ pipeline {
             agent { label 'master' }
             steps {
                 withAWS(credentials: 's3', region: 'eu-west-1') {
-                    s3Delete bucket: 'chadimasri-website'
+                    s3Delete bucket: 'chadimasri-website', path: ''
                     s3Upload bucket: 'chadimasri-website', includePathPattern: '**', workingDir: 'website'
                 }
             }
