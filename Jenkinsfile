@@ -24,7 +24,10 @@ pipeline {
             }
         }
         stage('Deploy to S3') {
-            agent { label 'master' }
+            // Has to be done from master, due to https://issues.jenkins-ci.org/browse/JENKINS-47046
+            agent {
+                label 'master'
+            }
             steps {
                 withAWS(credentials: 's3', region: 'eu-west-1') {
                     s3Delete bucket: 'chadimasri-website', path: ''
