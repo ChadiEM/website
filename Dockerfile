@@ -1,6 +1,11 @@
 FROM ubuntu:bionic
 
-RUN apt-get update \
-     && apt-get install -y npm default-jre \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        npm \
+        default-jre \
      && rm -rf /var/lib/apt/lists/* \
-     && npm install -g vnu-jar bootlint stylelint stylelint-config-recommended
+     && npm install -g \
+        vnu-jar \
+        bootlint \
+        stylelint \
+        stylelint-config-recommended
