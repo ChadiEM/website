@@ -1,11 +1,9 @@
-FROM ubuntu:bionic
+FROM openjdk:8-alpine
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        npm \
-        default-jre \
-     && rm -rf /var/lib/apt/lists/* \
-     && npm install -g \
-        vnu-jar \
-        bootlint \
-        stylelint \
-        stylelint-config-recommended
+RUN apk add --no-cache --update \
+    nodejs-npm \
+ && npm install -g \
+    vnu-jar \
+    bootlint \
+    stylelint \
+    stylelint-config-recommended
