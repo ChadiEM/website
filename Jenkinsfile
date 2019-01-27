@@ -1,8 +1,5 @@
 pipeline {
     agent none
-    triggers {
-        githubPush()
-    }
     stages {
         stage('Validate') {
             agent { dockerfile true }
