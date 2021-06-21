@@ -1,93 +1,104 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Chadi El Masri</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link rel="shortcut icon" type="image/png" href="favicon.png" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Chadi El Masri</title>
 
-		<script src="js/analytics.js"></script>
-	</head>
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<body>
-		<nav class="navbar-inverse navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Chadi El Masri</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="/docs/CV.pdf">CV</a></li>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<script src="js/analytics.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="#">Chadi El Masri</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/docs/CV.pdf">CV</a>
+					</li>
 				</ul>
 			</div>
-		</nav>
+		</div>
+	</nav>
 
-		<div class="jumbotron dotted-gray">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<img class="img-responsive img-circle" src="media/chadi.jpg" alt="Chadi" />
-					</div>
-					<div class="col-md-8">
-						<h1>Hello!</h1>
-						<p>I am a Software Engineer based in Paris.</p>
-					</div>
-				</div>
+	<div class="dotted-gray py-4">
+		<div class="container d-flex flex-row justify-content-evenly py-4">
+			<div class="text-center">
+				<img class="img-responsive rounded-circle" src="media/chadi.jpg" alt="Chadi" />
+			</div>
+			<div>
+				<h1>Hello!</h1>
+				<p>I am a Software Engineer based in Paris.</p>
 			</div>
 		</div>
+	</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<p>I am a Developer and Table Tennis player. I enjoy creating things that ease life, from simple apps to complicated gadgets.</p>
-                    <p>I am currently working as a <b>Principal Software Engineer</b> at <a href="https://www.murex.com">Murex</a>.</p>
-				</div>
-            </div>
+	<div class="container">
 
-            <div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<h3>Notable Projects & Contributions</h3>
-					<dl class="dl-horizontal">
-                        <dt>Home Kubernetes Cluster</dt>
-                        <dd>A <b>Kubernetes Cluster</b> of 4 Raspberry Pis to enable home monitoring and automation</dd>
-
-                        <dt><a href="https://gist.github.com/ChadiEM/688c9a1a135fcebbbb3332e9cd8e8c82">Dashing/Smashing Airparif Widget</a></dt>
-                        <dd>Map and Pollution Index in Paris & Île-de-France. Back-end in <b>Ruby</b>, and includes image processing via ImageMagick. Front-end in <b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.</dd>
-
-                        <dt><a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b">Dashing/Smashing RATP Widget</a></dt>
-                        <dd>Polls for the given public transport lines of Paris. Back-end in <b>Ruby</b>, front-end in <b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.</dd>
-
-                        <dt>OSS Contributions</dt>
-                        <dd>
-                            Jenkins <a href="https://github.com/jan-molak/jenkins-build-monitor-plugin">Build Monitor Plugin</a>,
-							<a href="https://github.com/grafana/grafana">Grafana</a>,
-                            Kodi <a href="https://github.com/kodi-pvr/pvr.iptvsimple">PVR IPTV Simple Client Addon</a>,
-                            <a href="https://github.com/kiegroup/jbpm">jBPM</a>
-                        </dd>
-                    </dl>
-				</div>
-			</div>
+		<div class="col-md-8 col-md-offset-2">
+			<p>I am a Developer and Table Tennis player. I enjoy creating things that ease life, from simple
+				apps to
+				complicated gadgets.</p>
+			<p>I'm currently working as a <b>Principal Software Engineer</b> at <a
+					href="https://www.murex.com">Murex</a>.</p>
 		</div>
 
-		<footer class="sticky-footer dotted-gray">
-			<div class="container text-center">
-				<a href="https://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
-					<img class="social-icon" src="media/icon/facebook.png" alt="Facebook" />
-				</a>
-				<a href="https://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
-					<img class="social-icon" src="media/icon/twitter.png" alt="Twitter"/>
-				</a>
+
+		<h3>Notable Projects & Contributions</h3>
+				<dl class="row">
+					<dt class="col-sm-4"><a href="https://gist.github.com/ChadiEM/688c9a1a135fcebbbb3332e9cd8e8c82">Dashing/Smashing
+							Airparif Widget</a></dt>
+					<dd class="col-sm-8">Map and Pollution Index in Paris & Île-de-France. Back-end in <b>Ruby</b>, and includes
+						image
+						processing via ImageMagick. Front-end in <b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.</dd>
+
+					<dt class="col-sm-4"><a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b">Dashing/Smashing
+							RATP
+							Widget</a></dt>
+					<dd class="col-sm-8">Polls for the given public transport lines of Paris. Back-end in <b>Ruby</b>, front-end in
+						<b>HTML</b>/<b>Sass</b>/<b>CoffeeScript</b>.
+					</dd>
+
+					<dt class="col-sm-4">OSS Contributions</dt>
+					<dd class="col-sm-8">
+						Jenkins <a href="https://github.com/jan-molak/jenkins-build-monitor-plugin">Build Monitor
+							Plugin</a>,
+						Kodi <a href="https://github.com/kodi-pvr/pvr.iptvsimple">PVR IPTV Simple Client Addon</a>,
+						<a href="https://github.com/kiegroup/jbpm">jBPM</a>
+					</dd>
+				</dl>
+			</div>
+
+	<footer class="sticky-footer dotted-gray">
+		<div class="container text-center">
+			<a href="https://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
+				<img class="social-icon" src="media/icon/facebook.png" alt="Facebook" />
+			</a>
+			<a href="https://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
+				<img class="social-icon" src="media/icon/twitter.png" alt="Twitter" />
+			</a>
 				<a href="https://www.linkedin.com/in/chadiem/" target="_blank" rel="noopener noreferrer">
-					<img class="social-icon" src="media/icon/linkedin.png" alt="LinkedIn" />
-				</a>
-				<a href="https://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
-					<img class="social-icon" src="media/icon/github.png" alt="GitHub" />
-				</a>
-			</div>
-		</footer>
-	</body>
+				<img class="social-icon" src="media/icon/linkedin.png" alt="LinkedIn" />
+			</a>
+			<a href="https://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
+				<img class="social-icon" src="media/icon/github.png" alt="GitHub" />
+			</a>
+		</div>
+	</footer>
+</body>
+
 </html>
