@@ -14,14 +14,6 @@ body {
     background-repeat: repeat;
 }
 
-.dl-horizontal dd {
-    margin-bottom: 20px;
-}
-
-.dl-horizontal dt {
-    white-space: normal;
-}
-
 .social-icon {
     margin-left: 3px;
     margin-right: 3px;
@@ -37,4 +29,13 @@ body {
 
     /* should be the same as the body margin above */
     height: 40px;
+}
+
+.shadow {
+    transition: filter 0.1s ease-in-out;
+    filter: brightness(80%);
+  }
+
+.shadow:hover{
+    filter: brightness(100%);
 }

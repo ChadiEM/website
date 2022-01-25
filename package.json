@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Repository for chadimasri.com",
+  "scripts": {
+    "serve": "lite-server --baseDir='website/'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChadiEM/website.git"
+  },
+  "author": "Chadi El Masri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChadiEM/website/issues"
+  },
+  "homepage": "https://github.com/ChadiEM/website#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
