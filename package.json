@@ -1,9 +1,12 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "Repository for chadimasri.com",
+  "description": "Repository for chadi.io",
+  "private": "true",
   "scripts": {
-    "serve": "lite-server --baseDir='website/'"
+    "serve": "lite-server --baseDir='website/'",
+    "lint": "stylelint website/css/*",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -16,6 +19,9 @@
   },
   "homepage": "https://github.com/ChadiEM/website#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "release-it": "^14.12.4",
+    "stylelint": "^14.3.0",
+    "stylelint-config-recommended": "^6.0.0"
   }
 }
