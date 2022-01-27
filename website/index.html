@@ -1,100 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chadi El Masri</title>
 
-	<title>Chadi El Masri</title>
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-	<link rel="shortcut icon" type="image/png" href="favicon.png" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/analytics.js"></script>
+    </head>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="js/analytics.js"></script>
-</head>
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Chadi El Masri</a>
+            </div>
+        </nav>
 
-<body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">Chadi El Masri</a>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/docs/CV.pdf">CV</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+        <main class="container-fluid p-0">
+            <div class="section bg-light">
+                <section class="container py-4">
+                    <div class="d-flex gap-5">
+                        <img class="rounded-circle profile" src="media/chadi.jpg" alt="Chadi" />
+                        <div class="">
+                            <h1 class="fw-bold">Hello!</h1>
+                            <p class="lead">I am a Software Engineer based in Paris.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-	<div class="dotted-gray py-4">
-		<div class="container d-flex flex-row py-4">
-			<div class="text-center">
-				<img class="img-responsive rounded-circle" src="media/chadi.jpg" alt="Chadi" />
-			</div>
-			<span class="mx-4"></span>
-			<div>
-				<h1>Hello!</h1>
-				<p>I am a Software Engineer based in Paris.</p>
-			</div>
-		</div>
-	</div>
+            <div class="section">
+                <section class="container">
+                    <h2>About me</h2>
+                    <div class="lead">
+                        <p>I am a developer, electronics hobbyist, and table tennis player.</p>
 
-	<div class="container py-4">
-		<div>
-			<p>I am a Developer and Table Tennis player. I enjoy creating things that ease life, from simple apps to complicated gadgets.</p>
-			<p>While my main expertise lies in <b>Backend development</b>, I am currently transitioning to <b>Frontend development</b> at <b><a href="https://www.murex.com" class="text-reset">Murex</a></b> in order to gain the full stack expertise.</p>
-		</div>
-	</div>
+                        <p>
+                            With over 10 years of experience in software development, I have acquired enough skills to integrate in any development environment.
+                            I had the opportunity to work on multiple topics including, but not limited to automation, testability, clean code, concurrency,
+                            databases, and RESTful services. Consequently, this exposed me to a wide array of languages and technologies.
+                        </p>
 
-	<div class="container py-4">
-		<h3>Projects</h3>
+                        <p>In the professional world, I have lead many development projects and have a strong focus on agility and incremental delivery.</p>
+                    </div>
 
-		<div class="row row-cols-1 row-cols-md-2 g-4">
-			<div class="col">
-				<div class="card h-100">
-					<img src="media/cluster.jpg" class="card-img-top shadow" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Home Kubernetes Cluster</h5>
-						<p class="card-text">A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
-						<p class="card-text">Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100">
-					<img src="media/ratp.png" class="card-img-top shadow" alt="...">
-					<div class="card-body">
-						<h5 class="card-title"><a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b" class="text-reset text-decoration-none">Dashing/Smashing RATP Widget</a></h5>
-						<p class="card-text">Polls for the given public transport lines of Paris. Back-end in Ruby, front-end in HTML/Sass/CoffeeScript.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+                    <div class="card m-5">
+                        <div class="card-body">
+                            <div class="d-flex flex-wrap justify-content-center gap-5">
+                                <div class="tech-icon-wrapper"><img class="tech-icon shadow-hover" src="media/tech/java.png" title="Java" alt="Java" /></div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/spring.svg" title="Spring" alt="Spring" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/jenkins.svg" title="Jenkins" alt="Jenkins" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/python.png" title="Python" alt="Python" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/kubernetes.svg" title="Kubernetes" alt="Kubernetes" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/docker.png" title="Docker" alt="Docker" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/grafana.svg" title="Grafana" alt="Grafana" />
+                                </div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/typescript.svg" title="TypeScript" alt="TypeScript" />
+                                </div>
+                                <div class="tech-icon-wrapper"><img class="tech-icon shadow-hover" src="media/tech/vue.svg" title="VueJS" alt="VueJS" /></div>
+                                <div class="tech-icon-wrapper">
+                                    <img class="tech-icon shadow-hover" src="media/tech/angular.svg" title="Angular" alt="Angular" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a
+                            class="btn btn-outline-primary"
+                            href="https://cv-chadiem.s3.eu-west-1.amazonaws.com/CV.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            role="button"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                                />
+                                <path
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                                />
+                            </svg>
+                            Download my CV</a
+                        >
+                    </div>
+                </section>
+            </div>
 
-	</div>
+            <div class="section bg-light">
+                <section class="container">
+                    <h2>Projects</h2>
+                    <div class="py-4">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="media/cluster.jpg" class="card-img-top shadow-hover" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">Home Kubernetes Cluster</h5>
+                                        <p class="card-text">A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
+                                        <p class="card-text">Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="media/ratp.png" class="card-img-top shadow-hover" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b" class="text-reset text-decoration-none"
+                                                >Dashing/Smashing RATP Widget</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Polls for the given public transport lines of Paris. Back-end in Ruby, front-end in HTML/Sass/CoffeeScript.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="media/additional-metrics.png" class="card-img-top shadow-hover" alt="..." />
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a href="https://plugins.jenkins.io/additional-metrics/" class="text-reset text-decoration-none"
+                                                >Jenkins Additional Metrics Plugin</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Provides additional metrics for Jenkins List Views, such as Success/Failure Rates, Min/Max durations, and
+                                            Uptime/Downtime.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-	<footer class="sticky-footer dotted-gray">
-		<div class="container text-center">
-			<a href="https://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
-				<img class="social-icon" src="media/icon/facebook.png" alt="Facebook" />
-			</a>
-			<a href="https://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
-				<img class="social-icon" src="media/icon/twitter.png" alt="Twitter" />
-			</a>
-			<a href="https://www.linkedin.com/in/chadiem/" target="_blank" rel="noopener noreferrer">
-				<img class="social-icon" src="media/icon/linkedin.png" alt="LinkedIn" />
-			</a>
-			<a href="https://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
-				<img class="social-icon" src="media/icon/github.png" alt="GitHub" />
-			</a>
-		</div>
-	</footer>
-</body>
-
+        <footer>
+            <div class="d-flex justify-content-center gap-3 py-2">
+                <a href="https://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/social/facebook.png" alt="Facebook" />
+                </a>
+                <a href="https://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/social/twitter.png" alt="Twitter" />
+                </a>
+                <a href="https://www.linkedin.com/in/chadiem/" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/social/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
+                    <img class="social-icon" src="media/social/github.png" alt="GitHub" />
+                </a>
+            </div>
+        </footer>
+    </body>
 </html>

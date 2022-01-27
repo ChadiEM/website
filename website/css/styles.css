@@ -1,41 +1,31 @@
-html {
-    /* for the sticky footer */
-    position: relative;
-    min-height: 100%;
+.profile {
+    max-height: 200px;
+    max-width: 200px;
 }
 
-body {
-    /* for the sticky footer */
-    margin-bottom: 40px;
+.section {
+    padding: 48px 0;
 }
 
-.dotted-gray {
-    background-image: url("../media/gray.jpg");
-    background-repeat: repeat;
+.tech-icon {
+    max-height: 96px;
+    object-fit: contain;
+}
+
+.tech-icon-wrapper {
+    width: 100px;
+    text-align: center;
 }
 
 .social-icon {
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-top: 8px;
-
-    width: 24px;
+    max-width: 24px;
 }
 
-.sticky-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    /* should be the same as the body margin above */
-    height: 40px;
-}
-
-.shadow {
+.shadow-hover {
     transition: filter 0.1s ease-in-out;
-    filter: brightness(80%);
-  }
-
-.shadow:hover{
     filter: brightness(100%);
+}
+
+.shadow-hover:hover {
+    filter: brightness(80%);
 }
