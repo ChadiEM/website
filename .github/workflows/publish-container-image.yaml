@@ -3,7 +3,7 @@ name: Publish Container Image to GCP Artifact Registry
 on:
   push:
     branches:
-      - "master"
+      - "**"
     tags:
       - "**"
 
