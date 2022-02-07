@@ -3,7 +3,7 @@ name: Publish Container Image to GCP Artifact Registry
 on:
   push:
     branches:
-      - "**"
+      - "master"
     tags:
       - "**"
 
@@ -43,7 +43,7 @@ jobs:
         run: |-
           gcloud auth configure-docker $REGION --quiet
 
-      - name: Build and Push Docker Image to Artifact Registry (latest)
+      - name: Build and Push Docker Image to Artifact Registry
         uses: docker/build-push-action@v2
         with:
           context: .
@@ -51,14 +51,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
-
-      # - name: Build and Push Docker Image to Artifact Registry (tag)
-      #   # if: steps.tag.outputs.tag
-      #   uses: docker/build-push-action@v2
-      #   env:
-      #     TAG: "${{ steps.tag.outputs.tag }}"
-      #   with:
-      #     context: .
-      #     push: true
-      #     tags: ${{ env.REGION }}/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.IMAGE }}:${{ env.TAG }}
-      #     platforms: linux/amd64,linux/arm64
