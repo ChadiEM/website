@@ -16,11 +16,6 @@
         />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-            crossorigin="anonymous"
-        ></script>
         <script src="js/analytics.js"></script>
     </head>
 
@@ -32,8 +27,8 @@
         </nav>
 
         <main class="container-fluid p-0">
-            <div class="section bg-light">
-                <section class="container py-4">
+            <section aria-label="Introduction" class="section bg-light">
+                <div class="container py-4">
                     <div class="d-flex gap-5">
                         <img class="rounded-circle profile" src="media/chadi.jpg" alt="Chadi" />
                         <div class="">
@@ -41,12 +36,14 @@
                             <p class="lead">I am a Software Engineer based in Paris.</p>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="section">
-                <section class="container">
-                    <h2>About me</h2>
+            <section aria-labelledby="about-title" class="section">
+                <div class="container">
+                    <header>
+                        <h2 id="about-title">About me</h2>
+                    </header>
                     <div class="lead">
                         <p>I am a developer, electronics hobbyist, and table tennis player.</p>
 
@@ -110,19 +107,21 @@
                             Download my CV</a
                         >
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
-            <div class="section bg-light">
-                <section class="container">
-                    <h2>Projects</h2>
+            <section aria-labelledby="projects-title" class="section bg-light">
+                <div class="container">
+                    <header>
+                        <h2 id="projects-title">Projects</h2>
+                    </header>
                     <div class="py-4">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col">
                                 <div class="card h-100">
                                     <img src="media/cluster.jpg" class="card-img-top shadow-hover" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">Home Kubernetes Cluster</h5>
+                                        <h3 class="card-title">Home Kubernetes Cluster</h3>
                                         <p class="card-text">A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
                                         <p class="card-text">Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
                                     </div>
@@ -132,11 +131,11 @@
                                 <div class="card h-100">
                                     <img src="media/ratp.png" class="card-img-top shadow-hover" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">
+                                        <h3 class="card-title">
                                             <a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b" class="text-reset text-decoration-none"
                                                 >Dashing/Smashing RATP Widget</a
                                             >
-                                        </h5>
+                                        </h3>
                                         <p class="card-text">
                                             Polls for the given public transport lines of Paris. Back-end in Ruby, front-end in HTML/Sass/CoffeeScript.
                                         </p>
@@ -147,11 +146,11 @@
                                 <div class="card h-100">
                                     <img src="media/additional-metrics.png" class="card-img-top shadow-hover" alt="..." />
                                     <div class="card-body">
-                                        <h5 class="card-title">
+                                        <h3 class="card-title">
                                             <a href="https://plugins.jenkins.io/additional-metrics/" class="text-reset text-decoration-none"
                                                 >Jenkins Additional Metrics Plugin</a
                                             >
-                                        </h5>
+                                        </h3>
                                         <p class="card-text">
                                             Provides additional metrics for Jenkins List Views, such as Success/Failure Rates, Min/Max durations, and
                                             Uptime/Downtime.
@@ -161,8 +160,8 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
         </main>
 
         <footer>
