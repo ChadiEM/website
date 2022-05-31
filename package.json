@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Repository for chadi.io",
   "private": "true",
   "scripts": {
