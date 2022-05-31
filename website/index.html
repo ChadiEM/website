@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Chadi El Masri - Personal Website" />
 
         <title>Chadi El Masri</title>
 
@@ -41,9 +41,7 @@
 
             <section aria-labelledby="about-title" class="section">
                 <div class="container">
-                    <header>
-                        <h2 id="about-title">About me</h2>
-                    </header>
+                    <h2 id="about-title">About me</h2>
                     <div class="lead">
                         <p>I am a developer, electronics hobbyist, and table tennis player.</p>
 
@@ -59,30 +57,34 @@
                     <div class="card m-5">
                         <div class="card-body">
                             <div class="d-flex flex-wrap justify-content-center gap-5">
-                                <div class="tech-icon-wrapper"><img class="tech-icon shadow-hover" src="media/tech/java.png" title="Java" alt="Java" /></div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
+                                    <img class="tech-icon shadow-hover" src="media/tech/java.png" title="Java" alt="Java" />
+                                </div>
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/spring.svg" title="Spring" alt="Spring" />
                                 </div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/jenkins.svg" title="Jenkins" alt="Jenkins" />
                                 </div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/python.png" title="Python" alt="Python" />
                                 </div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/kubernetes.svg" title="Kubernetes" alt="Kubernetes" />
                                 </div>
-                                <div class="tech-icon-wrapper">
-                                    <img class="tech-icon shadow-hover" src="media/tech/docker.png" title="Docker" alt="Docker" />
+                                <div class="tech-icon-wrapper" role="presentation">
+                                    <img class="tech-icon shadow-hover" src="media/tech/docker.webp" title="Docker" alt="Docker" />
                                 </div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/grafana.svg" title="Grafana" alt="Grafana" />
                                 </div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/typescript.svg" title="TypeScript" alt="TypeScript" />
                                 </div>
-                                <div class="tech-icon-wrapper"><img class="tech-icon shadow-hover" src="media/tech/vue.svg" title="VueJS" alt="VueJS" /></div>
-                                <div class="tech-icon-wrapper">
+                                <div class="tech-icon-wrapper" role="presentation">
+                                    <img class="tech-icon shadow-hover" src="media/tech/vue.svg" title="VueJS" alt="VueJS" />
+                                </div>
+                                <div class="tech-icon-wrapper" role="presentation">
                                     <img class="tech-icon shadow-hover" src="media/tech/angular.svg" title="Angular" alt="Angular" />
                                 </div>
                             </div>
@@ -96,7 +98,7 @@
                             rel="noopener noreferrer"
                             role="button"
                         >
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <svg aria-label="Download Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                 <path
                                     d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
                                 />
@@ -112,26 +114,24 @@
 
             <section aria-labelledby="projects-title" class="section bg-light">
                 <div class="container">
-                    <header>
-                        <h2 id="projects-title">Projects</h2>
-                    </header>
+                    <h2 id="projects-title">Projects</h2>
                     <div class="py-4">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
+                            <div class="col" aria-labelledby="kubernetes-title">
                                 <div class="card h-100">
-                                    <img src="media/cluster.jpg" class="card-img-top shadow-hover" alt="..." />
+                                    <img src="media/projects/cluster.jpg" class="card-img-top shadow-hover" alt="Home Kubernetes Cluster" />
                                     <div class="card-body">
-                                        <h3 class="card-title">Home Kubernetes Cluster</h3>
+                                        <h3 class="card-title" id="kubernetes-title">Home Kubernetes Cluster</h3>
                                         <p class="card-text">A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
                                         <p class="card-text">Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col" aria-labelledby="ratp-title">
                                 <div class="card h-100">
-                                    <img src="media/ratp.png" class="card-img-top shadow-hover" alt="..." />
+                                    <img src="media/projects/ratp.png" class="card-img-top shadow-hover" alt="Dashing/Smashing RATP Widget" />
                                     <div class="card-body">
-                                        <h3 class="card-title">
+                                        <h3 class="card-title" id="ratp-title">
                                             <a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b" class="text-reset text-decoration-none"
                                                 >Dashing/Smashing RATP Widget</a
                                             >
@@ -142,11 +142,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col" aria-labelledby="additional-metrics-title">
                                 <div class="card h-100">
-                                    <img src="media/additional-metrics.png" class="card-img-top shadow-hover" alt="..." />
+                                    <img
+                                        src="media/projects/additional-metrics.png"
+                                        class="card-img-top shadow-hover"
+                                        alt="Jenkins Additional Metrics Plugin"
+                                    />
                                     <div class="card-body">
-                                        <h3 class="card-title">
+                                        <h3 class="card-title" id="additional-metrics-title">
                                             <a href="https://plugins.jenkins.io/additional-metrics/" class="text-reset text-decoration-none"
                                                 >Jenkins Additional Metrics Plugin</a
                                             >

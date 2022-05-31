@@ -1,6 +1,11 @@
+:root {
+    --profile-size: 200px;
+    --tech-icon-size: calc(4rem + 1vw);
+}
+
 .profile {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: var(--profile-size);
+    max-width: var(--profile-size);
 }
 
 .section {
@@ -8,12 +13,12 @@
 }
 
 .tech-icon {
-    max-height: 96px;
+    max-height: var(--tech-icon-size);
     object-fit: contain;
 }
 
 .tech-icon-wrapper {
-    width: 100px;
+    width: var(--tech-icon-size);
     text-align: center;
 }
 
