@@ -18,12 +18,11 @@
   "bugs": {
     "url": "https://github.com/ChadiEM/website/issues"
   },
-  "homepage": "https://github.com/ChadiEM/website#readme",
   "devDependencies": {
     "cypress": "^10.1.0",
     "lite-server": "^2.6.1",
-    "release-it": "^14.12.4",
+    "release-it": "^15.0.0",
     "stylelint": "^14.3.0",
-    "stylelint-config-recommended": "^6.0.0"
+    "stylelint-config-recommended": "^8.0.0"
   }
 }
