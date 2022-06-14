@@ -1,11 +1,10 @@
 :root {
-    --profile-size: 200px;
     --tech-icon-size: calc(4rem + 1vw);
 }
 
 .profile {
-    max-height: var(--profile-size);
-    max-width: var(--profile-size);
+    max-width: 200px;
+    aspect-ratio: 1 / 1;
 }
 
 .section {
