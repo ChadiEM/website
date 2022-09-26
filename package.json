@@ -22,7 +22,7 @@
     "cypress": "^10.1.0",
     "lite-server": "^2.6.1",
     "release-it": "^15.0.0",
-    "stylelint": "^14.3.0",
+    "stylelint": "^14.12.1",
     "stylelint-config-recommended": "^9.0.0"
   }
 }
