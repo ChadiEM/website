@@ -23,7 +23,7 @@
     "lite-server": "^2.6.1",
     "prettier": "^2.7.1",
     "release-it": "^15.0.0",
-    "stylelint": "^14.13.0",
+    "stylelint": "^14.14.1",
     "stylelint-config-recommended": "^9.0.0"
   }
 }
