@@ -19,11 +19,12 @@
     "url": "https://github.com/ChadiEM/website/issues"
   },
   "devDependencies": {
-    "cypress": "^10.9.0",
+    "cypress": "^11.1.0",
     "lite-server": "^2.6.1",
     "prettier": "^2.7.1",
     "release-it": "^15.0.0",
-    "stylelint": "^14.13.0",
-    "stylelint-config-recommended": "^9.0.0"
+    "stylelint": "^14.15.0",
+    "stylelint-config-recommended": "^9.0.0",
+    "stylelint-no-unsupported-browser-features": "^6.0.1"
   }
 }

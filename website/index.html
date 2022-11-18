@@ -1,98 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Chadi El Masri - Personal Website" />
 
         <title>Chadi El Masri</title>
 
         <link rel="shortcut icon" type="image/png" href="favicon.png" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-            crossorigin="anonymous"
-        />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     </head>
 
     <body>
-        <nav class="navbar navbar-dark bg-dark">
+        <nav>
             <div class="container">
                 <a class="navbar-brand" href="#">Chadi El Masri</a>
             </div>
         </nav>
 
-        <main class="container-fluid p-0">
-            <section aria-label="Introduction" class="section bg-light">
-                <div class="container py-4">
-                    <div class="d-flex flex-wrap gap-5">
-                        <div class="flex-grow-1 flex-md-grow-0 d-flex">
-                            <img class="shadow rounded-circle mx-auto profile" src="media/chadi.webp" alt="Chadi" />
-                        </div>
-                        <div>
-                            <h1 class="fw-bold">Hello!</h1>
-                            <p class="lead">I am a Software Engineer based in Paris.</p>
-                        </div>
+        <main>
+            <section aria-label="Introduction" class="bg-alternate">
+                <div class="container banner">
+                    <img class="profile" src="media/chadi.webp" alt="Chadi" />
+                    <div>
+                        <h1>Hello!</h1>
+                        <p>I am a Software Engineer based in Paris.</p>
                     </div>
                 </div>
             </section>
 
-            <section aria-labelledby="about-title" class="section">
+            <section aria-labelledby="about-title">
                 <div class="container">
                     <h2 id="about-title">About me</h2>
-                    <div class="lead">
-                        <p>I am a developer, electronics hobbyist, and table tennis player.</p>
 
-                        <p>
-                            With over 10 years of experience in software development, I have acquired enough skills to integrate in any development environment.
-                            I had the opportunity to work on multiple topics including, but not limited to automation, testability, clean code, concurrency,
-                            databases, and RESTful services. Consequently, this exposed me to a wide array of languages and technologies.
-                        </p>
+                    <div class="about-items">
+                        <div>
+                            <p>I am a developer, electronics hobbyist, and table tennis player.</p>
 
-                        <p>In the professional world, I have lead many development projects and have a strong focus on agility and incremental delivery.</p>
-                    </div>
+                            <p>
+                                With over 10 years of experience in software development, I have acquired enough skills to integrate in any development
+                                environment. I had the opportunity to work on multiple topics ranging from <b>backend</b> (automation, concurrency, databases,
+                                RESTful services) to <b>frontend</b> (user interfaces) while focusing on testability and clean code. Consequently, this exposed
+                                me to a wide array of languages and technologies.
+                            </p>
 
-                    <div class="card m-5">
-                        <div class="card-body">
-                            <div class="d-flex flex-wrap justify-content-center gap-5">
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/java.png" title="Java" alt="Java Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/spring.svg" title="Spring" alt="Spring Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/jenkins.svg" title="Jenkins" alt="Jenkins Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/python.png" title="Python" alt="Python Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/kubernetes.svg" title="Kubernetes" alt="Kubernetes Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/docker.webp" title="Docker" alt="Docker Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/grafana.svg" title="Grafana" alt="Grafana Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/typescript.svg" title="TypeScript" alt="TypeScript Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/vue.svg" title="VueJS" alt="VueJS Icon" />
-                                </div>
-                                <div class="tech-icon-wrapper" role="presentation">
-                                    <img class="tech-icon shadow-hover" src="media/tech/angular.svg" title="Angular" alt="Angular Icon" />
-                                </div>
+                            <p>In the professional world, I have lead many development projects and have a strong focus on agility and incremental delivery.</p>
+                        </div>
+
+                        <div class="tech-list">
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/java.png" title="Java" alt="Java Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/spring.svg" title="Spring" alt="Spring Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/jenkins.svg" title="Jenkins" alt="Jenkins Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/python.svg" title="Python" alt="Python Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/kubernetes.svg" title="Kubernetes" alt="Kubernetes Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/docker.png" title="Docker" alt="Docker Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/grafana.svg" title="Grafana" alt="Grafana Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/typescript.svg" title="TypeScript" alt="TypeScript Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/vue.svg" title="VueJS" alt="VueJS Icon" />
+                            </div>
+                            <div class="tech-icon-wrapper" role="presentation">
+                                <img class="darken" src="media/tech/angular.svg" title="Angular" alt="Angular Icon" />
                             </div>
                         </div>
-                    </div>
-                    <div class="text-center">
+
                         <a
-                            class="btn btn-outline-primary"
+                            class="download-button"
                             href="https://cv-chadiem.s3.eu-west-1.amazonaws.com/CV.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -112,55 +101,38 @@
                 </div>
             </section>
 
-            <section aria-labelledby="projects-title" class="section bg-light">
+            <section aria-labelledby="projects-title" class="bg-alternate">
                 <div class="container">
                     <h2 id="projects-title">Projects</h2>
-                    <div class="py-4">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col" aria-labelledby="kubernetes-title">
-                                <div class="card h-100">
-                                    <img src="media/projects/cluster.webp" class="card-img-top shadow-hover" alt="Home Kubernetes Cluster" />
-                                    <div class="card-body">
-                                        <h3 class="card-title" id="kubernetes-title">Home Kubernetes Cluster</h3>
-                                        <p class="card-text">A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
-                                        <p class="card-text">Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
-                                    </div>
-                                </div>
+                    <div class="projects">
+                        <div class="project" aria-labelledby="kubernetes-title">
+                            <img src="media/projects/cluster.webp" class="project-image darken" alt="Home Kubernetes Cluster" />
+                            <div class="project-body">
+                                <h3 id="kubernetes-title">Home Kubernetes Cluster</h3>
+                                <p>A cluster of 4 Raspberry Pis to enable home monitoring and automation.</p>
+                                <p>Technologies: Kubernetes, MQTT, Prometheus, Grafana, Ansible, Pihole.</p>
                             </div>
-                            <div class="col" aria-labelledby="ratp-title">
-                                <div class="card h-100">
-                                    <img src="media/projects/ratp.png" class="card-img-top shadow-hover" alt="Dashing/Smashing RATP Widget" />
-                                    <div class="card-body">
-                                        <h3 class="card-title" id="ratp-title">
-                                            <a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b" class="text-reset text-decoration-none"
-                                                >Dashing/Smashing RATP Widget</a
-                                            >
-                                        </h3>
-                                        <p class="card-text">
-                                            Polls for the given public transport lines of Paris. Back-end in Ruby, front-end in HTML/Sass/CoffeeScript.
-                                        </p>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <div class="project" aria-labelledby="ratp-title">
+                            <img src="media/projects/ratp.png" class="project-image darken" alt="Dashing/Smashing RATP Widget" />
+                            <div class="project-body">
+                                <h3 id="ratp-title">
+                                    <a href="https://gist.github.com/ChadiEM/bc4014fa61f08b31f3d42a5e78c49d9b">Dashing/Smashing RATP Widget</a>
+                                </h3>
+                                <p>Polls for the given public transport lines of Paris. Back-end in Ruby, front-end in HTML/Sass/CoffeeScript.</p>
                             </div>
-                            <div class="col" aria-labelledby="additional-metrics-title">
-                                <div class="card h-100">
-                                    <img
-                                        src="media/projects/additional-metrics.webp"
-                                        class="card-img-top shadow-hover"
-                                        alt="Jenkins Additional Metrics Plugin"
-                                    />
-                                    <div class="card-body">
-                                        <h3 class="card-title" id="additional-metrics-title">
-                                            <a href="https://plugins.jenkins.io/additional-metrics/" class="text-reset text-decoration-none"
-                                                >Jenkins Additional Metrics Plugin</a
-                                            >
-                                        </h3>
-                                        <p class="card-text">
-                                            Provides additional metrics for Jenkins List Views, such as Success/Failure Rates, Min/Max durations, and
-                                            Uptime/Downtime.
-                                        </p>
-                                    </div>
-                                </div>
+                        </div>
+
+                        <div class="project" aria-labelledby="additional-metrics-title">
+                            <img src="media/projects/additional-metrics.webp" class="project-image darken" alt="Jenkins Additional Metrics Plugin" />
+                            <div class="project-body">
+                                <h3 id="additional-metrics-title">
+                                    <a href="https://plugins.jenkins.io/additional-metrics/">Jenkins Additional Metrics Plugin</a>
+                                </h3>
+                                <p>
+                                    Provides additional metrics for Jenkins List Views, such as Success/Failure Rates, Min/Max durations, and Uptime/Downtime.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -169,18 +141,21 @@
         </main>
 
         <footer>
-            <div class="d-flex justify-content-center gap-3 py-2">
+            <div class="social-icons">
                 <a href="https://www.facebook.com/chadi.masri" target="_blank" rel="noopener noreferrer">
-                    <img class="social-icon" src="media/social/facebook.png" alt="Facebook Icon" />
+                    <img src="media/social/facebook.png" alt="Facebook Icon" />
+                </a>
+                <a href="https://www.instagram.com/chadiem" target="_blank" rel="noopener noreferrer">
+                    <img src="media/social/instagram.svg" alt="Instagram Icon" />
                 </a>
                 <a href="https://twitter.com/chadimasri" target="_blank" rel="noopener noreferrer">
-                    <img class="social-icon" src="media/social/twitter.png" alt="Twitter Icon" />
+                    <img src="media/social/twitter.png" alt="Twitter Icon" />
                 </a>
                 <a href="https://www.linkedin.com/in/chadiem/" target="_blank" rel="noopener noreferrer">
-                    <img class="social-icon" src="media/social/linkedin.png" alt="LinkedIn Icon" />
+                    <img src="media/social/linkedin.png" alt="LinkedIn Icon" />
                 </a>
                 <a href="https://github.com/ChadiEM" target="_blank" rel="noopener noreferrer">
-                    <img class="social-icon" src="media/social/github.png" alt="GitHub Icon" />
+                    <img src="media/social/github.png" alt="GitHub Icon" />
                 </a>
             </div>
         </footer>
