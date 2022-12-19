@@ -4,7 +4,7 @@
   "description": "Repository for chadi.io",
   "private": "true",
   "scripts": {
-    "serve": "lite-server --baseDir='website/'",
+    "dev": "lite-server --baseDir='website/'",
     "lint": "stylelint website/css/*",
     "test": "cypress run",
     "release": "release-it"
