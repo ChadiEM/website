@@ -2,7 +2,7 @@
 Repository for [chadi.io](https://chadi.io)
 
 ## Development
-`npm run serve`
+`npm run dev`
 
 ## Lint
 `npm run lint`
