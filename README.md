@@ -6,9 +6,9 @@ Repository for [chadi.io](https://chadi.io)
 
 `npm run dev`
 
-## Lint
+## Check format and lint rules
 
-`npm run lint`
+`npm run check`
 
 ## Deployment
 

@@ -5,7 +5,8 @@
   "private": "true",
   "scripts": {
     "dev": "lite-server --baseDir='website/'",
-    "lint": "stylelint website/css/*",
+    "check": "prettier --check \"**/*\" --ignore-unknown && stylelint website/css/*",
+    "lint": "prettier --write \"**/*\" --ignore-unknown && stylelint --fix website/css/*",
     "test": "cypress run"
   },
   "repository": {
