@@ -4,7 +4,7 @@
   "description": "Repository for chadi.io",
   "private": "true",
   "scripts": {
-    "dev": "lite-server --baseDir='website/'",
+    "dev": "browser-sync start --server --files website --startPath website/index.html",
     "check": "prettier --check \"**/*\" --ignore-unknown && stylelint website/css/*",
     "lint": "prettier --write \"**/*\" --ignore-unknown && stylelint --fix website/css/*",
     "test": "cypress run"
@@ -19,8 +19,8 @@
     "url": "https://github.com/ChadiEM/website/issues"
   },
   "devDependencies": {
+    "browser-sync": "2.29.1",
     "cypress": "^12.0.1",
-    "lite-server": "^2.6.1",
     "prettier": "^2.8.0",
     "stylelint": "^15.6.0",
     "stylelint-config-recommended": "^12.0.0",
