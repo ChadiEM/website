@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":automergeLinters", ":automergeTesters", "schedule:automergeDaily"],
+  "extends": ["config:base", ":automergeLinters", ":automergeTesters", "schedule:daily"],
   "labels": ["dependencies"],
   "updateNotScheduled": false,
   "lockFileMaintenance": {
