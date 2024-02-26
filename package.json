@@ -22,7 +22,7 @@
     "cypress": "^13.0.0",
     "prettier": "^3.0.0",
     "stylelint": "^15.7.0",
-    "stylelint-config-recommended": "^13.0.0",
+    "stylelint-config-recommended": "^14.0.0",
     "stylelint-no-unsupported-browser-features": "^6.1.0"
   }
 }
