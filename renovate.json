@@ -6,5 +6,12 @@
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "description": "Auto-merge github actions updates",
+      "matchManagers": ["github-actions"],
+      "automerge": true
+    }
+  ]
 }
