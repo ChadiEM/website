@@ -22,6 +22,9 @@ jobs:
     if: ${{ github.ref_name == 'master' }}
     needs: [validate]
 
+    env:
+      DISTRIBUTION_ID: ${{ secrets.AWS_CF_DISTRIBUTION_ID }}
+
     steps:
       - uses: actions/checkout@v4
       - name: Update sitemap.xml
@@ -34,3 +37,5 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Copy to S3
         run: "aws s3 sync website/. s3://chadi.io --delete"
+      - name: Invalidate CloudFront distribution
+        run: "aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths '/*'"
