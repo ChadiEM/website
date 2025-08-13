@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -23,7 +23,7 @@ jobs:
     needs: [validate]
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Update sitemap.xml
         run: "BASE_URL=chadi.io LAST_MOD=$(date +%F) envsubst < sitemap.xml.template > website/sitemap.xml"
       - name: Configure AWS credentials
