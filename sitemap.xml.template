@@ -4,4 +4,8 @@
         <loc>https://${BASE_URL}/</loc>
         <lastmod>${LAST_MOD}</lastmod>
     </url>
+    <url>
+        <loc>https://${BASE_URL}/photos.html</loc>
+        <lastmod>${LAST_MOD}</lastmod>
+    </url>
 </urlset>
