@@ -34,6 +34,23 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
       - name: Copy to S3
         run: "aws s3 sync website/. s3://chadi.io --delete"
+      - name: Update CloudFront Function
+        env:
+          FUNCTION_NAME: additional-headers
+        run: |
+          # Get the function ETag
+          ETAG=$(aws cloudfront describe-function --name $FUNCTION_NAME --query 'ETag' --output text)
+
+          # Update the function code
+          aws cloudfront update-function \
+            --name $FUNCTION_NAME \
+            --function-config Comment="Additional headers for chadi.io",Runtime="cloudfront-js-2.0" \
+            --function-code fileb://.aws/additional-headers.js \
+            --if-match $ETAG
+
+          # Publish the function
+          NEW_ETAG=$(aws cloudfront describe-function --name $FUNCTION_NAME --query 'ETag' --output text)
+          aws cloudfront publish-function --name $FUNCTION_NAME --if-match $NEW_ETAG
       - name: Invalidate CloudFront distribution
         env:
           DISTRIBUTION_ID: ${{ secrets.AWS_CF_DISTRIBUTION_ID }}
