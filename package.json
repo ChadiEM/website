@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "browser-sync": "^3.0.0",
-    "cypress": "^14.0.0",
+    "cypress": "^15.0.0",
     "prettier": "^3.0.0",
     "stylelint": "^16.2.1",
     "stylelint-config-recommended": "^17.0.0",
