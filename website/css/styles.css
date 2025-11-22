@@ -5,10 +5,12 @@
     --font-size-small: 1rem;
     --font-size-smaller: 0.875rem;
 
-    /* Components */
-    --nav-links-gap: calc(var(--margin) * 2);
-    --card-min-width: 300px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 500;
+    --font-weight-bolder: 600;
+    --font-weight-boldest: 700;
 
+    /* Utilities */
     --background-color: white;
 
     --alternate-bg-color: rgb(248, 249, 250);
@@ -23,7 +25,11 @@
     --primary-color: #0056b3;
     --primary-hover-color: #004085;
 
-    --tag-bg: #e7f3ff;
+    /* Components */
+    --nav-links-gap: calc(var(--margin) * 2);
+    --card-min-width: 300px;
+
+    --tag-bg-color: #e7f3ff;
     --tag-color: #003d99;
 
     --card-bg-color: white;
@@ -47,7 +53,8 @@
         --primary-color: #8db9ec;
         --primary-hover-color: #6db0ff;
 
-        --tag-bg: #1a3a5a;
+        /* Components */
+        --tag-bg-color: #1a3a5a;
         --tag-color: #a6ccf9;
 
         --card-bg-color: #2a2a2a;
@@ -102,16 +109,16 @@ p {
 
 h1 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-boldest);
 }
 h2 {
-    font-weight: 600;
+    font-weight: var(--font-weight-bolder);
 }
 h3 {
-    font-weight: 500;
+    font-weight: var(--font-weight-bold);
 }
 p {
-    font-weight: 400;
+    font-weight: var(--font-weight-normal);
 }
 
 a {
@@ -174,7 +181,7 @@ nav {
 
 .nav-link.active {
     opacity: 1;
-    font-weight: 600;
+    font-weight: var(--font-weight-bolder);
 }
 /* End Navbar */
 
@@ -251,12 +258,12 @@ nav {
 }
 
 .tag {
-    background-color: var(--tag-bg);
+    background-color: var(--tag-bg-color);
     color: var(--tag-color);
     padding: 0.25rem 0.75rem;
     border-radius: 12px;
     font-size: var(--font-size-smaller);
-    font-weight: 500;
+    font-weight: var(--font-weight-bold);
 }
 
 .project-links {
@@ -266,23 +273,20 @@ nav {
 }
 
 .project-links a {
-    font-weight: 500;
+    font-weight: var(--font-weight-bold);
 }
 
 /* End Projects Section */
 
 /* Contact Section */
-.contact-intro {
-    text-align: center;
-    color: var(--text-main);
-    margin-block-end: calc(var(--margin) * 4);
-}
-
 .contact-links {
     display: flex;
-    justify-content: center;
     gap: calc(var(--margin) * 4);
     flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-link {
@@ -302,13 +306,8 @@ nav {
     transform: translateY(-4px);
 }
 
-.contact-link svg {
-    color: var(--primary-color);
-}
-
 .contact-link span {
-    font-weight: 500;
-    color: var(--text-main);
+    font-weight: var(--font-weight-bold);
 }
 /* End Contact Section */
 
@@ -367,7 +366,7 @@ nav {
     right: 35px;
     color: white;
     font-size: 40px;
-    font-weight: bold;
+    font-weight: var(--font-weight-boldest);
     cursor: pointer;
     transition: color 0.3s;
 }
