@@ -12,20 +12,21 @@
     </head>
 
     <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
         <nav>
             <div class="container nav-container">
                 <a class="navbar-brand" href="index.html">Chadi El Masri</a>
                 <div class="nav-links">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="index.html" aria-current="page">Home</a>
                     <a class="nav-link" href="photos.html">Photography</a>
                 </div>
             </div>
         </nav>
 
-        <main>
+        <main id="main-content">
             <section aria-label="Introduction" class="bg-alternate">
                 <div class="container banner">
-                    <img class="profile" src="media/chadi.webp" alt="Chadi" />
+                    <img class="profile" src="media/chadi.webp" alt="Portrait photo of Chadi El Masri" />
                     <div>
                         <h1>Hello!</h1>
                         <p>I am a Software Engineer based in Paris.</p>
@@ -58,18 +59,15 @@
                             </p>
                         </div>
 
-                        <a
-                            class="download-button"
-                            href="https://cv-chadiem.s3.eu-west-1.amazonaws.com/CV.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            role="button"
-                        >
-                            <svg aria-label="Download Icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <a class="download-button" href="https://cv-chadiem.s3.eu-west-1.amazonaws.com/CV.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <title>Download Icon</title>
                                 <path
+                                    fill="currentColor"
                                     d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
                                 />
                                 <path
+                                    fill="currentColor"
                                     d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
                                 />
                             </svg>
@@ -82,8 +80,8 @@
             <section aria-labelledby="projects-title" class="bg-alternate">
                 <div class="container">
                     <h2 id="projects-title">Projects</h2>
-                    <div class="projects-grid" role="list">
-                        <div class="project-card" role="listitem" aria-labelledby="jenkins-additional-metrics-plugin-title">
+                    <ul class="projects-grid no-list-style">
+                        <li class="project-card" aria-labelledby="jenkins-additional-metrics-plugin-title">
                             <h3 id="jenkins-additional-metrics-plugin-title">Jenkins additional-metrics plugin</h3>
                             <p>Provides additional metrics via columns in Jenkins' List View.</p>
                             <div class="project-tags">
@@ -92,9 +90,9 @@
                             <div class="project-links">
                                 <a href="https://github.com/jenkinsci/additional-metrics-plugin" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="project-card" role="listitem" aria-labelledby="idfm-api-title">
+                        <li class="project-card" aria-labelledby="idfm-api-title">
                             <h3 id="idfm-api-title">Île-de-France Mobilités API</h3>
                             <p>A simple, minimal, and easy-to-understand API to get the timings of Île-de-France Mobilités public transport.</p>
                             <div class="project-tags">
@@ -103,9 +101,9 @@
                             <div class="project-links">
                                 <a href="https://github.com/ChadiEM/idfm-api" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="project-card" role="listitem" aria-labelledby="paris-piscine-api-title">
+                        <li class="project-card" aria-labelledby="paris-piscine-api-title">
                             <h3 id="paris-piscine-api-title">Piscines de Paris API</h3>
                             <p>Opening hours of the Paris public swimming pools, in JSON format.</p>
                             <div class="project-tags">
@@ -114,9 +112,9 @@
                             <div class="project-links">
                                 <a href="https://github.com/ChadiEM/horaires-piscine" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="project-card" role="listitem" aria-labelledby="zigbee-bed-occupancy-title">
+                        <li class="project-card" aria-labelledby="zigbee-bed-occupancy-title">
                             <h3 id="zigbee-bed-occupancy-title">Zigbee Bed occupancy sensor</h3>
                             <p>Provides bed occupancy information on two sides of the bed using two SF15-600 pressure sensors.</p>
                             <div class="project-tags">
@@ -126,9 +124,9 @@
                             <div class="project-links">
                                 <a href="https://github.com/ChadiEM/zigbee-bed-occupancy-arduino" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="project-card" role="listitem" aria-labelledby="automatic-vacuum-title">
+                        <li class="project-card" aria-labelledby="automatic-vacuum-title">
                             <h3 id="automatic-vacuum-title">Automatic Vacuum</h3>
                             <p>Tells the robot vacuum cleaner to clean the house only when nobody is there.</p>
                             <div class="project-tags">
@@ -138,8 +136,8 @@
                             <div class="project-links">
                                 <a href="https://github.com/ChadiEM/homectl-robot-cleaner" target="_blank" rel="noopener noreferrer">GitHub</a>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
@@ -147,7 +145,7 @@
                 <div class="container">
                     <h2 id="contact-title">Get in Touch</h2>
                     <p>Feel free to reach out for collaboration, opportunities, or just to say hello!</p>
-                    <ul class="contact-links">
+                    <ul class="contact-links no-list-style">
                         <li>
                             <a href="https://linkedin.com/in/chadiem" target="_blank" rel="noopener noreferrer" class="contact-link">
                                 <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
