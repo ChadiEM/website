@@ -5,7 +5,7 @@ function handler(event) {
   headers["strict-transport-security"] = { value: "max-age=63072000; includeSubDomains; preload" };
   headers["content-security-policy"] = { value: "default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'; frame-ancestors 'none';" };
   headers["x-content-type-options"] = { value: "nosniff" };
-  headers["cache-control"] = { value: "public, no-transform, max-age=604800" };
+  headers["cache-control"] = { value: "public, no-transform, max-age=31536000" };
 
   return response;
 }
