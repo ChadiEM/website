@@ -13,5 +13,6 @@
       "matchManagers": ["github-actions"],
       "automerge": true
     }
-  ]
+  ],
+  "automergeType": "branch"
 }
